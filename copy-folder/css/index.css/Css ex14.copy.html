@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css ex14.copy.html</title>
+</head>
+<body>
+
+
+    <table>
+        <tr>
+            <td>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ol>
+        </td>
+        <td>
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ul>
+        </td>
+        <td>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ol>
+        </td>
+        <td>
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ul>
+        </td>
+        <td>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ol>
+        </td>
+        <td>
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ul>
+        </td>
+        <td>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ol>
+        </td>
+        </tr>
+    </table>
+    
+</body>
+
+<style>
+
+    *{
+        transition: 1s;
+    }
+
+    body{
+        background-color: #222;
+        color: snow;
+    }
+
+
+    table{
+        margin: 0 auto;
+    }
+
+
+    ol{
+        list-style-type: armenian;
+    }
+
+    ul{
+        list-style-type: korean-hangul-formal;
+    }
+
+
+    ul li:nth-child(odd),
+    ol li:nth-child(odd){
+        padding: 5px;
+        background-color: black;
+        color: magenta;
+    }
+
+
+    ul li:nth-child(even),
+    ol li:nth-child(even){
+        padding: 5px;
+        background-color:silver;
+        color: green;
+    }
+
+    ul li:first-child,
+    ul li:last-child,
+    ol li:first-child,
+    ol li:last-child{
+        padding:5px;
+        background-color:red;
+        color: snow;
+    }
+
+
+    ul li:nth-child(even):hover,
+    ol li:nth-child(even):hover{
+        background: url(/img/pepsi-logo.png) center / cover no-repeat;
+        background-blend-mode:darken;
+        background-color: rgba(0, 0,0,0.5);
+        padding: 70px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+    ul li:nth-child(odd):hover,
+    ol li:nth-child(odd):hover{
+        background: url(/img/logo/Intagram\ Logo.png) center / cover no-repeat;
+        background-blend-mode:darken;
+        background-color: rgba(0, 0,0,0.5);
+        padding: 70px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+</style>
+</html>

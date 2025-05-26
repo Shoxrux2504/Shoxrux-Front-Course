@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 18.copy.html</title>
+</head>
+
+<body>
+
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Incidunt sapiente</span> est a illo tenetur
+            accusamus itaque reprehenderit veniam animi <span>ipsam optio</span>, facilis facere impedit recusandae
+            dolor ad similique. Nisi, libero?</p>
+        <div class="content">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px"><br>
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px"><br>
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px"><br>
+        </div>
+    </main>
+
+</body>
+
+
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        transition: 1s;
+        box-sizing: border-box;
+    }
+
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+
+    main{
+        min-width: 450px;
+        padding: 25px;
+        border-radius: 20px;
+        margin: 25px auto;
+        text-align: center;
+        width: 80%;
+        background-color: #333;
+    }
+
+
+    main div{
+        margin: 20px 0 0 0 ;
+    }
+
+
+    main:hover{
+        background: url(/img/3.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        font-size: 20px;
+        background-color: rgba(0,0,0,0.543);
+        padding: 20px;
+    }
+
+
+    main div img:nth-child(5),
+    main div img:nth-child(6),
+    main div img:nth-child(7),
+    main div img:nth-child(10){
+        visibility: hidden;
+    }
+
+
+    main:hover span{
+        display: inline-block;
+        border: 5px solid green;
+    }
+
+
+    img:hover{
+        opacity: 0.5;
+        border: 5px solid green;
+    }
+
+
+    span:hover{
+        background: url(/img/3.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0,0,0,0.543);
+        display: inline-block;
+        color: magenta;
+        text-transform: capitalize;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 25px;
+    }
+</style>
+
+</html>

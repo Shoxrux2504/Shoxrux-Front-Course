@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut cion" href="/img/logo/Gmail Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo/Facebook Logo.png" type="image/x-icon">
+    <title>First lesson css</title>
+</head>
+<body>
+
+
+    <main>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <aside>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <footer>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </footer>
+            </aside>
+        </div>
+    </main>
+    <br>
+    <button class="testclass">button</button> <br>
+    <button id="testd1">button</button><br>
+    <button type="submit">button</button> <br>
+    <input id="testd1" class="testclass" type="submit"> <br>
+
+    
+</body>
+
+<style>
+
+
+
+    main div aside footer{
+        background-color: red;
+        color: aqua;
+    }
+
+
+    main p{
+        color: red;
+    }
+
+    main>p{
+        color: red;
+    }
+
+
+    main+button{
+        color: snow;
+        background-color: gray;
+    }
+
+
+    main~button, span{
+        background-color: #333;
+        color: snow;
+    }
+
+
+    button.testclass{
+        background-color: black;
+        color: gold;
+    }
+
+    button#testd1{
+        color: red;
+        background-color: darkcyan;
+    }
+
+    button[type="submit"]{
+        color: magenta;
+        background-color: darkgreen;
+    }
+
+
+
+    
+</style>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css ex10.copy.html</title>
+</head>
+
+<body>
+
+    <main>
+        <img src="/img/1.jpg" alt="" width="100%" height="0">
+        <p>
+            Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            Repellat quisquam quidem,
+            dolorem commodi facilis nam velit
+            numquam itaque eaque libero
+        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid voluptatum, voluptas unde
+                modi sapiente odio laudantium
+            </p>
+        </div>
+    </main>
+
+</body>
+
+
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        transition: 1s;
+    }
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+    main{
+        border: 5px solid red;
+        width: 50%;
+        padding: 20px ;
+        margin: 20px auto;
+    }
+
+
+    main p{
+        margin: 20px 0;
+    }
+
+    main:hover img{
+        height: 200px;
+        box-shadow: 0 0 10px 10px aquamarine
+    }
+
+
+    main{
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+        height: 350px;
+        border: 2px solid red;
+        padding: 20px;
+        text-shadow: 0 0 10px 10px red, 0 0 10px 20px blue 0 0 10px 30px yellow;
+    }
+
+
+    main:hover div{
+        background: url(/img/4.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0,0,0,0.5);
+        padding: 250px;
+        border-radius: 50%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+</style>
+
+</html>

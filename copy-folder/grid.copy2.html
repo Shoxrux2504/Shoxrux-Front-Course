@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Ex</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="top">
+
+        </div>
+        <div class="bottom">
+            <div class="left"></div>
+            <div class="right">
+                <div class="top2">
+                    <div class="right2"></div>
+                    <div class="left2"></div>
+                </div>
+                <div class="bottom2"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<style>
+    body {
+        background-color: #333;
+    }
+
+    main {
+        display: grid;
+        width: 400px;
+        height: 100px;
+        margin: 10px auto;
+        background-color: #333;
+        grid-template: 1fr 3fr / 1fr;
+        gap: 5px;
+    }
+
+    .top {
+        background-color: lightgrey;
+    }
+
+    .bottom {
+        background-color: #333;
+        display: grid;
+        grid-template: 1fr / 3fr 3fr;
+        gap: 5px;
+    }
+
+    .right {
+        background-color: #333;
+        display: grid;
+        grid-template: 1fr 3fr / 1fr;
+        gap: 5px;
+    }
+
+    .left {
+        background-color: #333;
+        display: grid;
+        grid-template: 1fr 3fr / 1fr;
+        gap: 5px;
+    }
+
+
+    .bottom .left,
+    .bottom .bottom2,
+    .top2 .right2,
+    .top2 .left2 {
+        background-color: lightgrey;
+    }
+
+    .main{
+        background-color: lightgray;
+    }
+</style>
+
+</html>

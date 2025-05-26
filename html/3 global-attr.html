@@ -1,62 +1,197 @@
 <!DOCTYPE html>
-<html  lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global-Attributes</title>
-    <link rel="shortcut icon" href="/img/logo/Gmail Logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>CPAP Machines for Sleep Apnea</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <!-- Верхняя полоса с информацией о доставке и телефоном -->
+  <header>
+    <div class="top-banner">
+      <p>Free Shipping Over $49 | 24/7 Chat & Email & Phone</p>
+      <p>Talk to an expert! <a href="tel:1234567899">(123) 456-7899</a></p>
+    </div>
 
-<body >
-    <a href="1 introduction.html">introduction.html</a>
-    <br>
-    <a href="2 img-link.html">img-link.html</a>
-    <br>
-    <a href="3 global-attr.html">global-attr.html</a>
-    <br>
-    <a href="4 table.html">table.html</a>
-    <br>
-    <a href="5 list.html">list.html</a>
-    <br>
+    <!-- Основной хедер: логотип, поиск, ссылки -->
+    <div class="main-header">
+      <div class="logo-block">
+        <!-- Если есть логотип в виде изображения, подключите его:
+             <img src="cpap-logo.png" alt="CPAP Market Logo" class="logo-img"> -->
+        <div class="logo-text">
+          <h1><span>CPAP</span> market</h1>
+          <p>Sleep better. Life better.</p>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search🔍">
+      </div>
+      <div class="header-links">
+        <a href="💕">Blog</a>
+        <a href="❤️">Account</a>
+        <a href="💖">Cart (0)</a>
+      </div>
+    </div>
 
+    <!-- Меню с основными разделами -->
+    <nav class="main-nav">
+      <a href="#">MACHINES</a>
+      <a href="#">MASKS</a>
+      <a href="#">CPAP SUPPLIES</a>
+      <a href="#">HUMIDIFIERS</a>
+      <a href="#">MORE</a>
+    </nav>
+  </header>
 
-    <details>
-        <summary>details</summary>
-        <h1 title="about title">heading 1</h1>
-        <h1 style="
-        color: red;
-        background-color: gray;
-        color: green;
-        "
-        class="testclass" id="testid"
-        >heading 2</h1>
-        <h1>heading 3</h1>
-        <h1>heading 4</h1>
-    </details>
-
-    <img src="" alt="" width="" height="">
-    
-
-
+  <!-- Основной контент: хлебные крошки, заголовок, описание, картинка -->
+  <main>
+    <div class="breadcrumb">
+      <a href="#">Home</a> / <a href="#">CPAP Machines</a>
+    </div>
+    <h2>CPAP Machines for Sleep Apnea</h2>
+    <p>
+      Search all of our available machine types as well as machine accessories 
+      and replacement parts below.
+    </p>
+    <!-- Замените cpap-machine.jpg на реальное название файла с изображением -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNA-XCu7KqUTy1fzTbziQhKLpW1-lnbJtzg&s" alt="CPAP Machine" class="product-image">
+  </main>
 </body>
 <style>
-
-    #testid{
-        color: darkcyan;
-        background-color: darkgray;
-    }
-
-    h1{
-        color: rgb(255, 0, 0);
-        background-color: rgb(0, 0, 0);
-    }
-
-    .testclass{
-        color: blue;
-    }
-
+    /* Сброс базовых отступов и настройка box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
  
-</style>
+}
 
+/* Основные стили для body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ----- Верхняя информационная полоса ----- */
+.top-banner {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color:#333;
+  background-color:darkgray;
+}
+
+.top-banner p {
+  margin: auto 0;
+}
+
+.top-banner a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* ----- Основной хедер: логотип, поиск, ссылки ----- */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+
+/* Если используете логотип-картинку:
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+*/
+
+.logo-text h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  color: #f37a2f; /* Пример оранжевого цвета для "CPAP" */
+}
+
+.logo-text h1 span {
+  color: #f37a2f; /* Или другой цвет для выделения слова "CPAP" */
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.header-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* ----- Главное меню ----- */
+.main-nav {
+  background-color: #654a99; /* Примерно фиолетовый оттенок, как на скриншоте */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ----- Хлебные крошки и контент ----- */
+.breadcrumb {
+  text-align: left;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px;
+}
+
+h2 {
+  text-align: left;
+  padding: 0 20px;
+  margin: 20px 0 10px 0;
+  font-size: 24px;
+}
+
+p {
+  text-align: left;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.product-image {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 40px auto;
+}
+</style>
 </html>

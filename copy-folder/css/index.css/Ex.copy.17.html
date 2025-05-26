@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex.17.copy.html</title>
+</head>
+<body>
+
+    <marquee behavior="alternate" direction="">
+        <a href="https://www.youtube.com"></a>
+    </marquee>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <Span>Aspernatur itaque</Span> molestias nostrum vitae nesciunt <span> aliquam tempore</Span> quaerat mollitia iure neque.</p>
+        <button>Link1</button>
+        <button>Link2</button>
+    </main>
+    
+</body>
+
+
+<style>
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+
+    main{
+        padding: 150px;
+        text-align: center;
+        border: 5px solid red;
+    }
+
+
+    main p{
+        width: 30%;
+        margin: 20px auto;
+    }
+
+
+    button{
+        padding: 25px;
+        margin: 0 20px 20px 20px;
+        background-color: rgba(0,0,0,0);
+        background-color: inherit;
+        display: inline-block;
+        outline: none;
+        border: none;
+        color: yellow;
+    }
+
+
+    main:hover{
+        background: url(/img/2.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0,0,255,0.526);
+        font-size: 20px;
+        line-height: 50px;
+        text-transform: capitalize;
+        word-spacing: 20px;
+        height: 70vh;
+    }
+
+
+    main:hover button{
+        display: inline-block;
+        padding: 20px;
+        margin: 80px;
+        font-size: 20px;
+    }
+
+
+    main:hover span{
+        padding: 20px;
+        display: inline-block;
+        border: 5px solid yellowgreen;
+    }
+
+
+    button:hover{
+        background-color: rgba(0,128,0,0.526);
+        color: red;
+        border-radius: 20px;
+        border-bottom: 5px solid green;
+    }
+
+
+
+    span:hover{
+        background-color: green;
+        color: red;
+        border-radius: 20px
+    }
+
+
+
+
+
+</style>
+</html>

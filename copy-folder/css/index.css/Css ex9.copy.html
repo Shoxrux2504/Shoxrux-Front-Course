@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css ex9.copy.html</title>
+</head>
+
+<body>
+
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit
+            amet consectetur adipisicing elit.
+            Obcaecati repellendus tempore saepe
+            placeat, voluptatibus eos ratione voluptatem
+            eligendi aut minima natus? Quaerat, facere!
+            Animi id ullam quia laboriosam suscipit
+            quam!
+        </p>
+    </main>
+
+</body>
+
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+
+    body {
+        background-color: black;
+        color: snow;
+    }
+
+
+    main {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+        height: 300px;
+        border: 2px solid red;
+        padding: 20px;
+        text-shadow: 2px 2px 4px red, -2px -2px 4px blue;
+    }
+
+
+    main:hover {
+        background: url(/img/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 100px;
+        box-shadow: 0 0 15px 10px red, 0 0 15px 25px blue, 0 0 15px 35px yellow;
+    }
+</style>
+
+</html>
